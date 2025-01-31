@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="primeiro">
+        <form action="#" id="login-form">
+            <h2>Login</h2>
+            <div class="input-field">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" required>
+                <label for="password">Senha</label>
+                <span id="show-password" class="show-hide">
+                    <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
+                </span>
+            </div>
+            <div class="forget">
+                <label for="remember">
+                    <input type="checkbox" id="remember">
+                    <p>Lembrar senha</p>
+                </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <button type="submit">Log in</button>
+            <div class="register">
+                <p>Criar nova conta? <a href="#" id="create-account">Criar conta</a></p>
+            </div>
+        </form>
+    </section> 
+
+    <!-- Página de Criar Conta -->
+    <section class="criar-conta" id="criar-conta">
+        <form action="#" id="create-account-form">
+            <h2>Criar Nova Conta</h2>
+            <div class="input-field">
+                <input type="email" id="new-email" required>
+                <label for="new-email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="new-password" required>
+                <label for="new-password">Nova Senha</label>
+            </div>
+            <button type="submit">Criar Conta</button>
+            <p><a href="#" id="go-back">Voltar para Login</a></p>
+        </form>
+    </section> 
+
+    <script src="script.js"></script>
+</body>
+</html>
