@@ -1,203 +1,205 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Courier New", Courier, monospace;
-  }
-  
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-    padding: 0 10px;
-    background: linear-gradient(135deg, #62daca 0%, #c221c2 100%);
-  }
-  
-  body ::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
-  .primeiro {
-    width: 400px;
-    border-radius: 15px;
-    padding: 40px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    transition: all 0.3s ease;
-  }
-  
-  .primeiro:hover {
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  h2 {
-    font-size: 2.2em;
-    margin-bottom: 25px;
-    color: #ffffff;
-    letter-spacing: 1px;
-  }
-  
-  input {
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #271930;
-    color: #ffffff;
-    font-weight: 600;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    border-radius: 25px;
-    font-size: 16px;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    color: #000000;
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #ffffff;
-  }
-  
-  .register {
-    text-align: center;
-    margin-top: 30px;
-    color: #ffffff;
-  }
-  
-  .input-field {
-    position: relative;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 20px 0;
-  }
-  
-  .input-field label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    color: #666161;
-    font-size: 16px;
-    pointer-events: none;
-    transition: 0.3s ease;
-  }
-  
-  .input-field input {
-    width: 100%;
-    height: 40px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: #666161;
-    padding: 0 10px;
-  }
-  
-  .input-field input:focus ~ label,
-  .input-field input:valid ~ label {
-    font-size: 0.9rem;
-    top: 10px;
-    transform: translateY(-150%);
-    color: #ffdde1;
-  }
-  
-  .forget {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25px 0 35px 0;
-    color: #666161;
-  }
-  
-  #remember {
-    accent-color: #ee838f;
-  }
-  
-  .forget label {
-    display: flex;
-    align-items: center;
-  }
-  
-  .forget label p {
-    margin-left: 8px;
-  }
-  
-  .forget a {
-    color: #4a3d6e;
-    text-decoration: none;
-  }
-  
-  .forget a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 480px) {
-    section.primeiro {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+  background: linear-gradient(135deg, #62daca 0%, #c221c2 100%);
+}
+
+body ::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.primeiro {
+  width: 400px;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease;
+}
+
+.primeiro:hover {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+input {
+  font-size: 16px;
+}
+
+button {
+  background-color: #271930;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #666161;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #666161;
+  padding: 0 10px;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 0.9rem;
+  top: 10px;
+  transform: translateY(-150%);
+  color: #ffdde1;
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #666161;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+}
+
+.forget label p {
+  margin-left: 8px;
+}
+
+.forget a {
+  color: #4a3d6e;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  section.primeiro {
       padding: 20px;
-    }
-    h2 {
+  }
+  h2 {
       font-size: 20px;
-    }
-    .input-field label {
-      font-size: 12px;
-    }
-    .input-field input {
-      font-size: 14px;
-    }
-    .forget p, .forget a {
-      font-size: 12px;
-    }
-    button {
-      font-size: 14px;
-    }
   }
-  
-  @media (max-width: 768px) {
-    section.primeiro {
+  .input-field label {
+      font-size: 12px;
+  }
+  .input-field input {
+      font-size: 14px;
+  }
+  .forget p, .forget a {
+      font-size: 12px;
+  }
+  button {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.primeiro {
       padding: 30px;
-    }
-    h2 {
+  }
+  h2 {
       font-size: 22px;
-    }
-    .input-field input {
+  }
+  .input-field input {
       font-size: 15px;
-    }
-    .forget p, .forget a {
+  }
+  .forget p, .forget a {
       font-size: 13px;
-    }
-    button {
+  }
+  button {
       font-size: 15px;
-    }
   }
-  
-  /* Correção do layout do ícone de olho */
-  .show-hide {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  .olho {
-    width: 25px;
-    height: 25px;
-  }
-  
+}
+
+/* Correção do layout do ícone de olho */
+.show-hide {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.olho {
+  width: 25px;
+  height: 25px;
+}
+
+/* Ocultar a seção de criação de conta por padrão */
+#criar-conta {
+  display: none;
+}
